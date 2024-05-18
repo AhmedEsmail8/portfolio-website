@@ -1,0 +1,88 @@
+/* sm */
+@media (min-width: 576px) {  
+    .cd-headline{
+        font-size: 1.4rem;
+    }
+}
+
+/* md */
+@media (min-width: 768px) { 
+    /* .cd-headline{
+        font-size: 2rem;
+    } */
+
+    header h1:not(.cd-headline){
+        font-size: 3.125rem;
+        font-weight: 800;
+    }
+    
+    .cd-headline{
+        font-size: 2.4rem;
+    }
+    
+}
+
+/* lg */
+@media (min-width: 992px) { 
+    header .active::after{
+        left: 0;
+    }
+    .navbar-collapse{
+        background-color: transparent;
+        padding: 0;
+    }
+    .cd-headline{
+        font-size: 3rem;
+    }
+    nav .nav-link{
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        color: #fff !important;
+        display: block !important;
+    }
+    .main-nav .navbar-collapse::after{
+        height: 0px;
+    }
+    .navbar-collapse{
+        min-height: 50px;
+    }
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-img::after{
+        bottom: 20%;
+    }
+    
+ }
+
+/* xl */
+@media (min-width: 1200px) { 
+    nav > .container{
+        padding-left: 6.25rem;
+        padding-right: 6.25rem;
+    }
+    
+    section .container{
+        padding: 0 6rem;
+    }
+    
+    
+
+    /* section#about{
+        padding: 0;
+    } */
+    .cd-headline{
+        font-size: 3.75rem;
+    }
+    .about-img::after{
+        bottom: 0;
+    }
+ }
+
+/* xxl */
+@media (min-width: 1400px) {  
+    .about-img::after{
+        bottom: -5%;
+    }
+}

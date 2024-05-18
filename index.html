@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- animated headline -->
+  <link rel="stylesheet" href="css/animated.headline.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="icon" href="imgs/favicon.ico" type="image/png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css" />
+  <title>Daniels</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -20%" data-bs-smooth-scroll="true"
+  class="scrollspy-example" tabindex="0">
+  <header id="home" class="vh-100 text-white position-relative" data-scroll-index="0"
+    data-stellar-background-ratio="0.8">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container py-4">
+        <h4><a class="navbar-brand text-white" href="#">DANIELS</a></h4>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse header-collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link overflow-hidden px-0 text-white position-relative active" aria-current="page"
+                href="#home" onclick="toggle_nav()">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link overflow-hidden px-0 text-white position-relative" href="#about" onclick="toggle_nav()">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link overflow-hidden px-0 text-white position-relative" href="#services" onclick="toggle_nav()">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link overflow-hidden px-0 text-white position-relative" href="#works" onclick="toggle_nav()">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link overflow-hidden px-0 text-white position-relative" href="#clients" onclick="toggle_nav()">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link overflow-hidden px-0 text-white position-relative" href="#team" onclick="toggle_nav()">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link overflow-hidden px-0 text-white position-relative" href="#contact" onclick="toggle_nav()">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-text position-absolute top-50 start-50 translate-middle text-center mt-4">
+      <h1>Hello</h1>
+      <h1 class="cd-headline clip fw-lighter">
+        <span class="blc d-inline-block py-2">I Am </span>
+        <span class="cd-words-wrapper py-2 d-inline-block position-relative text-start overflow-hidden">
+          <b class="is-visible">Larry Daniels</b>
+          <b>Developer</b>
+          <b>Designer</b>
+        </span>
+      </h1>
+      <ul class="list-unstyled header-social-icons d-flex align-items-center justify-content-center gap-1 mt-5">
+        <li class="bg-black bg-opacity-25 rounded-circle d-flex justify-content-center align-items-center">
+          <a href="#"><i class="text-white fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li class="bg-black bg-opacity-25 rounded-circle d-flex justify-content-center align-items-center">
+          <a href="#"><i class="text-white fa-brands fa-twitter"></i></a>
+        </li>
+        <li class="bg-black bg-opacity-25 rounded-circle d-flex justify-content-center align-items-center">
+          <a href="#"><i class="text-white fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li class="bg-black bg-opacity-25 rounded-circle d-flex justify-content-center align-items-center">
+          <a href="#"><i class="text-white fa-brands fa-behance"></i></a>
+        </li>
+        <li class="bg-black bg-opacity-25 rounded-circle d-flex justify-content-center align-items-center">
+          <a href="#"><i class="text-white fa-brands fa-youtube"></i></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg main-nav fixed-top bg-white" id="navbar">
+    <div class="container py-4">
+      <h4><a class="navbar-brand" href="#">DANIELS</a></h4>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars text-black"></i>
+      </button>
+      <div class="collapse navbar-collapse position-relative" id="mainNavbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link overflow-hidden px-0 position-relative active" aria-current="page" href="#home" data-bs-toggle="collapse" data-bs-target="#mainNavbarSupportedContent"
+          >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link overflow-hidden px-0 position-relative" href="#about" data-bs-toggle="collapse" data-bs-target="#mainNavbarSupportedContent"
+              >About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link overflow-hidden px-0 position-relative" href="#services" data-bs-toggle="collapse" data-bs-target="#mainNavbarSupportedContent"
+              >Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link overflow-hidden px-0 position-relative" href="#works" data-bs-toggle="collapse" data-bs-target="#mainNavbarSupportedContent"
+              >Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link overflow-hidden px-0 position-relative" href="#clients" data-bs-toggle="collapse" data-bs-target="#mainNavbarSupportedContent"
+              >Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link overflow-hidden px-0 position-relative" href="#team" data-bs-toggle="collapse" data-bs-target="#mainNavbarSupportedContent"
+              >Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link overflow-hidden px-0 position-relative" href="#contact" data-bs-toggle="collapse" data-bs-target="#mainNavbarSupportedContent"
+              >Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="about" data-scroll-index="0">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 about-img position-relative">
+            <img src="imgs/hero.jpg" alt="hero image about section" class="mx-lg-0 mx-auto d-block" />
+          </div>
+          <div class="col-lg-7">
+            <div class="about-caption mt-lg-0 mt-5">
+              <h2 class="mb-0">About Me.</h2>
+              <span>UI / UX DESIGNER & WEB DEVELOPER</span>
+              <p class="mt-4">
+                I am <span class="fw-bold">Jerry Daniels</span> Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                It has survived not only five centuries, but also the leap
+                into electronic but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the
+                1960s with the release of Letraset sheets containing
+              </p>
+
+              <div class="skills mt-5">
+                <div class="progress my-4" role="progressbar" aria-label="example" aria-valuenow="95" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar bg-black rounded" style="width: 95%">
+                    <div class="d-flex justify-content-between align-items-center px-3">
+                      <h6>Web Design</h6>
+                      <h6>95%</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress my-4" role="progressbar" aria-label="example" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar bg-black rounded" style="width: 80%">
+                    <div class="d-flex justify-content-between align-items-center px-3">
+                      <h6>Branding</h6>
+                      <h6>80%</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress my-4" role="progressbar" aria-label="example" aria-valuenow="90" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar bg-black rounded" style="width: 90%">
+                    <div class="d-flex justify-content-between align-items-center px-3">
+                      <h6>Development</h6>
+                      <h6>90%</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-buttons mt-5">
+                <button class="btn bg-black text-white cv-btn border border-1 border-black">
+                  Download C.V
+                </button>
+                <button class="btn border border-1 border-black contact-btn">
+                  Contact Me
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="bg-gray">
+      <div class="section-title text-center">
+        <h2 class="d-inline-block position-relative z-1">Services.</h2>
+      </div>
+      <div class="container pt-5">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="service-card d-flex flex-column text-center bg-white px-4 py-5">
+              <div class="service-card-icon mx-auto d-flex align-items-center justify-content-center rounded-circle">
+                <i class="fa-solid fa-laptop fa-2xl"></i>
+              </div>
+              <h6 class="service-card-title my-3">Web Design</h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                the industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service-card d-flex flex-column text-center bg-white px-4 py-5">
+              <div class="service-card-icon mx-auto d-flex align-items-center justify-content-center rounded-circle">
+                <i class="fa-solid fa-bullhorn fa-2xl"></i>
+              </div>
+              <h6 class="service-card-title my-3">Branding</h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                the industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service-card d-flex flex-column text-center bg-white px-4 py-5">
+              <div class="service-card-icon mx-auto d-flex align-items-center justify-content-center rounded-circle">
+                <i class="fa-solid fa-umbrella fa-2xl"></i>
+              </div>
+              <h6 class="service-card-title my-3">Development</h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                the industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service-card d-flex flex-column text-center bg-white px-4 py-5">
+              <div class="service-card-icon mx-auto d-flex align-items-center justify-content-center rounded-circle">
+                <i class="fa-regular fa-gem fa-2xl"></i>
+              </div>
+              <h6 class="service-card-title my-3">Creative Design</h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                the industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service-card d-flex flex-column text-center bg-white px-4 py-5">
+              <div class="service-card-icon mx-auto d-flex align-items-center justify-content-center rounded-circle">
+                <i class="fa-solid fa-tv fa-2xl"></i>
+              </div>
+              <h6 class="service-card-title my-3">Fully Responsive</h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                the industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service-card d-flex flex-column text-center bg-white px-4 py-5">
+              <div class="service-card-icon mx-auto d-flex align-items-center justify-content-center rounded-circle">
+                <i class="fa-solid fa-camera fa-2xl"></i>
+              </div>
+              <h6 class="service-card-title my-3">Retina Ready</h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                the industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="section-title text-center">
+        <h2 class="d-inline-block position-relative z-1">Portfolio.</h2>
+      </div>
+      <div class="container">
+        <ul class="nav justify-content-center my-5" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link overflow-hidden px-0 mx-3 active position-relative text-black fw-bold" id="all-tab"
+              data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab" aria-controls="all"
+              aria-selected="true">
+              All
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link overflow-hidden px-0 mx-3 position-relative text-black fw-bold" id="brand-tab"
+              data-bs-toggle="pill" data-bs-target="#brand" type="button" role="tab" aria-controls="brand"
+              aria-selected="false">
+              Brand
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link overflow-hidden px-0 mx-3 position-relative text-black fw-bold" id="design-tab"
+              data-bs-toggle="pill" data-bs-target="#design" type="button" role="tab" aria-controls="design"
+              aria-selected="false">
+              Design
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link overflow-hidden px-0 mx-3 position-relative text-black fw-bold" id="graphic-tab"
+              data-bs-toggle="pill" data-bs-target="#graphic" type="button" role="tab" aria-controls="graphic"
+              aria-selected="false">
+              Graphic
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+            <div class="row g-4" id="tmp">
+              <div class="col-lg-4 col-md-6">
+                <div class="work-card position-relative">
+                  <img src="imgs/portfolio/1.jpg" alt="work image" class="img-fluid" />
+                  <div
+                    class="work-card-overlay position-absolute d-flex flex-column justify-content-center align-items-center gap-4">
+                    <h6>WEB DESIGN</h6>
+                    <div class="work-overlay-icons d-flex justify-content-center align-items-center column-gap-2">
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-link-slash position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="work-card position-relative">
+                  <img src="imgs/portfolio/2.jpg" alt="work image" class="img-fluid" />
+                  <div
+                    class="work-card-overlay position-absolute d-flex flex-column justify-content-center align-items-center gap-4">
+                    <h6>WEB DESIGN</h6>
+                    <div class="work-overlay-icons d-flex justify-content-center align-items-center column-gap-2">
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-link-slash position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="work-card position-relative">
+                  <img src="imgs/portfolio/3.jpg" alt="work image" class="img-fluid" />
+                  <div
+                    class="work-card-overlay position-absolute d-flex flex-column justify-content-center align-items-center gap-4">
+                    <h6>WEB DESIGN</h6>
+                    <div class="work-overlay-icons d-flex justify-content-center align-items-center column-gap-2">
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-link-slash position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="work-card position-relative">
+                  <img src="imgs/portfolio/4.jpg" alt="work image" class="img-fluid" />
+                  <div
+                    class="work-card-overlay position-absolute d-flex flex-column justify-content-center align-items-center gap-4">
+                    <h6>WEB DESIGN</h6>
+                    <div class="work-overlay-icons d-flex justify-content-center align-items-center column-gap-2">
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-link-slash position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="work-card position-relative">
+                  <img src="imgs/portfolio/5.jpg" alt="work image" class="img-fluid" />
+                  <div
+                    class="work-card-overlay position-absolute d-flex flex-column justify-content-center align-items-center gap-4">
+                    <h6>WEB DESIGN</h6>
+                    <div class="work-overlay-icons d-flex justify-content-center align-items-center column-gap-2">
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-link-slash position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="work-card position-relative">
+                  <img src="imgs/portfolio/6.jpg" alt="work image" class="img-fluid" />
+                  <div
+                    class="work-card-overlay position-absolute d-flex flex-column justify-content-center align-items-center gap-4">
+                    <h6>WEB DESIGN</h6>
+                    <div class="work-overlay-icons d-flex justify-content-center align-items-center column-gap-2">
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-link-slash position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="brand" role="tabpanel" aria-labelledby="brand-tab" tabindex="0">
+            <div class="row g-4" id="tmp">
+              <div class="col-lg-4 col-md-6">
+                <div class="work-card position-relative">
+                  <img src="imgs/portfolio/4.jpg" alt="work image" class="img-fluid" />
+                  <div
+                    class="work-card-overlay position-absolute d-flex flex-column justify-content-center align-items-center gap-4">
+                    <h6>WEB DESIGN</h6>
+                    <div class="work-overlay-icons d-flex justify-content-center align-items-center column-gap-2">
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-link-slash position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="work-card position-relative">
+                  <img src="imgs/portfolio/6.jpg" alt="work image" class="img-fluid" />
+                  <div
+                    class="work-card-overlay position-absolute d-flex flex-column justify-content-center align-items-center gap-4">
+                    <h6>WEB DESIGN</h6>
+                    <div class="work-overlay-icons d-flex justify-content-center align-items-center column-gap-2">
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-link-slash position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
+            <div class="row g-4" id="tmp">
+              <div class="col-lg-4 col-md-6">
+                <div class="work-card position-relative">
+                  <img src="imgs/portfolio/2.jpg" alt="work image" class="img-fluid" />
+                  <div
+                    class="work-card-overlay position-absolute d-flex flex-column justify-content-center align-items-center gap-4">
+                    <h6>WEB DESIGN</h6>
+                    <div class="work-overlay-icons d-flex justify-content-center align-items-center column-gap-2">
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-link-slash position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="work-card position-relative">
+                  <img src="imgs/portfolio/5.jpg" alt="work image" class="img-fluid" />
+                  <div
+                    class="work-card-overlay position-absolute d-flex flex-column justify-content-center align-items-center gap-4">
+                    <h6>WEB DESIGN</h6>
+                    <div class="work-overlay-icons d-flex justify-content-center align-items-center column-gap-2">
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-link-slash position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="graphic" role="tabpanel" aria-labelledby="graphic-tab" tabindex="0">
+            <div class="row g-4" id="tmp">
+              <div class="col-lg-4 col-md-6">
+                <div class="work-card position-relative">
+                  <img src="imgs/portfolio/1.jpg" alt="work image" class="img-fluid" />
+                  <div
+                    class="work-card-overlay position-absolute d-flex flex-column justify-content-center align-items-center gap-4">
+                    <h6>WEB DESIGN</h6>
+                    <div class="work-overlay-icons d-flex justify-content-center align-items-center column-gap-2">
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-link-slash position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="work-card position-relative">
+                  <img src="imgs/portfolio/3.jpg" alt="work image" class="img-fluid" />
+                  <div
+                    class="work-card-overlay position-absolute d-flex flex-column justify-content-center align-items-center gap-4">
+                    <h6>WEB DESIGN</h6>
+                    <div class="work-overlay-icons d-flex justify-content-center align-items-center column-gap-2">
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-link-slash position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="work-card position-relative">
+                  <img src="imgs/portfolio/5.jpg" alt="work image" class="img-fluid" />
+                  <div
+                    class="work-card-overlay position-absolute d-flex flex-column justify-content-center align-items-center gap-4">
+                    <h6>WEB DESIGN</h6>
+                    <div class="work-overlay-icons d-flex justify-content-center align-items-center column-gap-2">
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-link-slash position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                      <div class="icon bg-black text-white rounded-circle position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute start-50 top-50 translate-middle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients" class="bg-gray">
+      <div class="section-title text-center">
+        <h2 class="d-inline-block position-relative z-1">Testimonials.</h2>
+      </div>
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide mt-3" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <div class="clients-item py-5 d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="imgs/1_New1.jpg" alt="carousel item image" class="rounded-circle" />
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, aperiam, iusto omnis praesentium similique eaque
+                  molestias itaque autem temporibus quia fuga voluptatem eos
+                  aut consectetur.
+                </p>
+                <h6 class="fw-bold mb-1 mt-3">Alex Smith</h6>
+                <p>Envato Customer</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <div class="clients-item py-5 d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="imgs/1_New1.jpg" alt="carousel item image" class="rounded-circle" />
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, aperiam, iusto omnis praesentium similique eaque
+                  molestias itaque autem temporibus quia fuga voluptatem eos
+                  aut consectetur.
+                </p>
+                <h6 class="fw-bold mb-1 mt-3">Alex Smith</h6>
+                <p>Envato Customer</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <div class="clients-item py-5 d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="imgs/1_New1.jpg" alt="carousel item image" class="rounded-circle" />
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, aperiam, iusto omnis praesentium similique eaque
+                  molestias itaque autem temporibus quia fuga voluptatem eos
+                  aut consectetur.
+                </p>
+                <h6 class="fw-bold mb-1 mt-3">Alex Smith</h6>
+                <p>Envato Customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="clients-item py-5 d-flex flex-column justify-content-center align-items-center text-center">
+          <img src="imgs/1_New1.jpg" alt="carousel item image" class="rounded-circle">
+          <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, aperiam, iusto omnis praesentium similique eaque molestias itaque autem temporibus quia fuga voluptatem eos aut consectetur.</p>
+          <h6 class="fw-bold mb-1 mt-3">Alex Smith</h6>
+          <p>Envato Customer</p>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="numbers">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-3">
+            <div class="number-item d-flex flex-column justify-content-center align-items-center">
+              <i class="fa-solid fa-users fa-2x"></i>
+              <h4 class="counter fs-2 my-3">850</h4>
+              <p class="fw-bold">Happy Customers</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="number-item d-flex flex-column justify-content-center align-items-center">
+              <i class="fa-solid fa-thumbs-up fa-2x"></i>
+              <h4 class="counter fs-2 my-3">230</h4>
+              <p class="fw-bold">Complete Projects</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="number-item d-flex flex-column justify-content-center align-items-center">
+              <i class="fa-solid fa-bullhorn fa-2x"></i>
+              <h4 class="counter fs-2 my-3">9450</h4>
+              <p class="fw-bold">Lines Of Code</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="number-item d-flex flex-column justify-content-center align-items-center">
+              <i class="fa-solid fa-cloud-arrow-down fa-2x"></i>
+              <h4 class="counter fs-2 my-3">780</h4>
+              <p class="fw-bold">Files Downloaded</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="bg-gray">
+      <div class="section-title text-center">
+        <h2 class="d-inline-block position-relative z-1">Our Team.</h2>
+      </div>
+      <div class="container mt-5">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="team-member-card text-center overflow-hidden">
+              <div class="team-member-img w-100 position-relative overflow-hidden">
+                <img src="imgs/1.jpg" alt="" class="w-100">
+                <div class="team-card-overlay position-absolute">
+
+                  <ul class="list-unstyled team-card-icons position-absolute d-flex justify-content-center align-items-center start-50 top-50 translate-middle gap-3">
+                    <li class="bg-black rounded-circle d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="bg-black rounded-circle d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="bg-black rounded-circle d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                    <li class="bg-black rounded-circle d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    
+                  </ul>
+
+                </div>
+              </div>
+              <div class="team-member-caption rounded-bottom text-white p-3">
+                <h3>John Doe</h3>
+                <h4 class="text-uppercase">front-end developer</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="team-member-card text-center overflow-hidden">
+              <div class="team-member-img w-100 position-relative overflow-hidden">
+                <img src="imgs/2.jpg" alt="" class="w-100">
+                <div class="team-card-overlay position-absolute">
+
+                  <ul class="list-unstyled team-card-icons position-absolute d-flex justify-content-center align-items-center start-50 top-50 translate-middle gap-3">
+                    <li class="bg-black rounded-circle d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="bg-black rounded-circle d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="bg-black rounded-circle d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                    <li class="bg-black rounded-circle d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    
+                  </ul>
+
+                </div>
+              </div>
+              <div class="team-member-caption rounded-bottom text-white p-3">
+                <h3>Dave Wood</h3>
+                <h4 class="text-uppercase">back-end developer</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="team-member-card text-center overflow-hidden">
+              <div class="team-member-img w-100 position-relative overflow-hidden">
+                <img src="imgs/1.jpg" alt="" class="w-100">
+                <div class="team-card-overlay position-absolute">
+
+                  <ul class="list-unstyled team-card-icons position-absolute d-flex justify-content-center align-items-center start-50 top-50 translate-middle gap-3">
+                    <li class="bg-black rounded-circle d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="bg-black rounded-circle d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="bg-black rounded-circle d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                    <li class="bg-black rounded-circle d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    
+                  </ul>
+
+                </div>
+              </div>
+              <div class="team-member-caption rounded-bottom text-white p-3">
+                <h3>Claire Chedd</h3>
+                <h4 class="text-uppercase">back-end developer</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title text-center">
+        <h2 class="d-inline-block position-relative z-1">Contact Us.</h2>
+      </div>
+      <div class="container">
+        <div class="row gy-5 mt-3">
+          <div class="col-lg-4">
+            <div class="contact-card text-center">
+              <div class="contact-icon rounded-circle position-relative d-inline-block mx-auto">
+                <i class="fa-solid fa-location-arrow fa-2x position-absolute top-50 start-50 translate-middle"></i>
+              </div>
+              <h4 class="my-2">Address</h4>
+              <span>6834 Hollywood Blvd - Los Angeles CA</span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact-card text-center">
+              <div class="contact-icon rounded-circle position-relative d-inline-block mx-auto">
+                <i class="fa-solid fa-envelope fa-2x position-absolute top-50 start-50 translate-middle"></i>
+              </div>
+              <h4 class="my-2">Email</h4>
+              <span>Support@website.com</span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact-card text-center">
+              <div class="contact-icon rounded-circle position-relative d-inline-block mx-auto">
+                <i class="fa-solid fa-phone fa-2x position-absolute top-50 start-50 translate-middle"></i>
+              </div>
+              <h4 class="my-2">Phone</h4>
+              <span>+20 010 2517 8918</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form mt-5">
+          <div class="row gx-4 gy-3">
+            <div class="col-lg-6">
+              <input type="text" class="form-control py-2" placeholder="Name" name="name" id="name">
+            </div>
+            <div class="col-lg-6">
+              <input type="text" class="form-control py-2" placeholder="Email" name="email" id="email">
+            </div>
+            <div class="col-12">
+              <textarea name="message" id="message" class="form-control" placeholder="Message" rows="10" cols=""></textarea>
+            </div>
+          </div>
+          <button class="btn mt-4 bg-black text-white border border-1 border-black">submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="d-flex align-items-center justify-content-center text-center">
+    <p class="m-0">Copy Right 2018 © By Daniels All Rights Reserved</p>
+  </footer>
+
+  <!-- fontawesome -->
+  <script src="js/all.min.js"></script>
+  <!-- bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/animated.headline.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
